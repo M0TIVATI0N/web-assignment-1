@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Rocket Technologies</h1>
+    </header>
+
+    <!--<nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Rockets</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>-->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Rockets</a> |
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Launch Vehicles Comparison</h2>
+
+        <table> <!--<table border="1">-->
+            <caption>SpaceX Launch Vehicles Capabilities</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Vehicle</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Payload to LEO (kg)</th>
+                    <th scope="col">Estimated Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Falcon 1</th>
+                    <td>Retired</td>
+                    <td>420</td>
+                    <td>$7M</td>
+                </tr>
+                <tr>
+                    <th scope="row">Falcon 9</th>
+                    <td rowspan="2">Active</td>
+                    <td>22,800</td>
+                    <td>$67M</td>
+                </tr>
+                <tr>
+                    <th scope="row">Falcon Heavy</th>
+                    <td>63,800</td>
+                    <td>$90M</td>
+                </tr>
+                <tr>
+                    <th scope="row">Starship</th>
+                    <td>In Testing</td>
+                    <td>150,000+</td>
+                    <td>In Development</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Note: Data is approximate and based on public records.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Contact for Launch Services</h2>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Mission Inquiry Form</legend>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Elon Musk"><br><br>
+
+                <label for="emailAddress">Email Address:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required><br><br>
+
+                <label for="payloadWeight">Payload Weight (kg):</label>
+                <input type="number" id="payloadWeight" name="payloadWeight" min="1"><br><br>
+
+                <label for="launchDate">Preferred Launch Date:</label>
+                <input type="date" id="launchDate" name="launchDate"><br><br>
+
+                <label>Target Orbit:</label><br>
+                <input type="radio" id="orbitLEO" name="orbit" value="LEO">
+                <label for="orbitLEO">Low Earth Orbit (LEO)</label><br>
+
+                <input type="radio" id="orbitGTO" name="orbit" value="GTO">
+                <label for="orbitGTO">Geostationary Transfer Orbit (GTO)</label><br><br>
+
+                <label for="message">Mission Details:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"
+                    placeholder="Describe your payload..."></textarea><br><br>
+
+                <input type="submit" value="Send Inquiry">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rocket Technologies Overview. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
